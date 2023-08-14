@@ -1,4 +1,4 @@
-export default function HomePage() {
+export default function CategoryPage() {
   return (
     <main>
       <section className="mx-auto flex h-screen max-w-3xl flex-col items-center justify-center gap-6 px-6 text-center">
