@@ -29,7 +29,7 @@ export default function HomePage() {
                   alt="Pijar Camp"
                   width={306}
                   height={447}
-                  className="flex h-full w-auto md:hidden"
+                  className="flex h-auto w-full md:hidden"
                 />
                 {/* Image Desktop */}
                 <Image
@@ -37,7 +37,7 @@ export default function HomePage() {
                   alt="Pijar Camp"
                   width={812}
                   height={294}
-                  className="hidden h-full w-auto md:flex"
+                  className="hidden h-auto w-full md:flex"
                 />
               </div>
               {/* Col */}
@@ -48,7 +48,7 @@ export default function HomePage() {
                   alt="Pijar Prakerja"
                   width={306}
                   height={447}
-                  className="flex h-full w-auto md:hidden"
+                  className="flex h-auto w-full md:hidden"
                 />
                 {/* Image Desktop */}
                 <Image
@@ -56,7 +56,7 @@ export default function HomePage() {
                   alt="Pijar Prakerja"
                   width={812}
                   height={294}
-                  className="hidden h-full w-auto md:flex"
+                  className="hidden h-auto w-full md:flex"
                 />
               </div>
             </div>
