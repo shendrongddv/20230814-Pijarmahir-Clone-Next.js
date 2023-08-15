@@ -13,18 +13,18 @@ const HorizontalScroll = () => {
         {items?.map((item) => (
           <div
             key={item.id}
-            className="group flex w-5/12 shrink-0 flex-col items-center max-md:first:pl-4 max-md:last:pr-4 md:w-[18.9%]"
+            className="group flex w-4/12 shrink-0 flex-col items-center max-md:first:pl-4 max-md:last:pr-4 md:w-[18.9%]"
           >
             <div className="flex h-full w-full items-center justify-center rounded-lg border p-2 transition duration-200 group-hover:shadow-md">
               <Image
                 src={`/partners/${item.img}`}
                 alt={item.name}
                 width={200}
-                height={150}
+                height={200}
                 className="max-h-14 w-auto scale-100 transition duration-200 group-hover:scale-90 md:max-h-20"
               />
             </div>
-            <span className="mt-2 text-center text-sm font-medium opacity-75">
+            <span className="mt-2 text-center text-sm font-medium opacity-50">
               {item.name}
             </span>
           </div>
