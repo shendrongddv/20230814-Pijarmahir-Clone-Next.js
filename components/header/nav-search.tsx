@@ -5,7 +5,7 @@ import { Search } from "lucide-react";
 
 const NavSearch = () => {
   return (
-    <div className="flex flex-1 overflow-hidden rounded-md border border-input">
+    <div className="flex max-w-md flex-1 overflow-hidden rounded-md border border-input">
       <Input
         type="email"
         placeholder="Cari kursus..."

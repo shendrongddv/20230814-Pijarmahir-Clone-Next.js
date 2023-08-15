@@ -91,7 +91,7 @@ h6 {
 }
 
 .h2 {
-  @apply text-2xl leading-snug md:text-4xl;
+  @apply text-base leading-snug md:text-2xl;
 }
 
 .h3 {

@@ -9,7 +9,7 @@ import NavSearch from "./nav-search";
 
 const HeaderMain = () => {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full gap-2 border-b bg-white px-4 max-md:py-2">
+    <header className="fixed left-0 top-0 z-50 w-full gap-2 border-b bg-white px-4 max-md:py-2 md:gap-4">
       <div className="container">
         <div className="flex items-center justify-between gap-2 md:h-20">
           {/* MobileToggle */}
@@ -22,27 +22,25 @@ const HeaderMain = () => {
             <NavLogo />
           </div>
 
-          {/* NavSearch */}
-          <NavSearch />
-
           {/* NavPopover */}
           <div className="hidden md:flex">
             <NavPopover />
           </div>
 
-          {/* NavMobileButtons */}
-          <NavMobileButtons />
+          {/* NavSearch */}
+          <NavSearch />
 
-          <div className="hidden items-center justify-center gap-4 divide-x md:flex">
+          {/* NavGroups */}
+          <div className="hidden items-center justify-center gap-4 md:flex">
             {/* NavLinks */}
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-0">
               <Link
                 href="/"
                 className={cn(
                   buttonVariants({
                     variant: "ghost",
                     size: "default",
-                    className: "",
+                    className: "shrink-0",
                   }),
                 )}
               >
@@ -54,22 +52,23 @@ const HeaderMain = () => {
                   buttonVariants({
                     variant: "ghost",
                     size: "default",
-                    className: "",
+                    className: "shrink-0",
                   }),
                 )}
               >
                 Pijar Camp
               </Link>
             </div>
+
             {/* NavButtons */}
-            <div className="flex items-center justify-center gap-4 md:pl-8">
+            <div className="flex items-center justify-center gap-2">
               <Link
                 href="/"
                 className={cn(
                   buttonVariants({
                     variant: "outline",
                     size: "default",
-                    className: "px-8",
+                    className: "shrink-0 px-6",
                   }),
                 )}
               >
@@ -81,13 +80,18 @@ const HeaderMain = () => {
                   buttonVariants({
                     variant: "destructive",
                     size: "default",
-                    className: "px-8",
+                    className: "shrink-0 px-6",
                   }),
                 )}
               >
-                Masuk
+                Daftar
               </Link>
             </div>
+          </div>
+
+          {/* NavMobileButtons */}
+          <div className="flex md:hidden">
+            <NavMobileButtons />
           </div>
         </div>
       </div>

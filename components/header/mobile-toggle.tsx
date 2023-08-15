@@ -4,10 +4,10 @@ import {
   // SheetClose,
   SheetContent,
   // SheetFooter,
-  // SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import NavLogo from "./nav-logo";
 
 export function MobileToggle() {
   return (
@@ -17,10 +17,9 @@ export function MobileToggle() {
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-full">
-        {/* <SheetHeader>
-        </SheetHeader> */}
+      <SheetContent side="left" className="w-4/5 p-0">
         {/* Content */}
+        <NavMobile />
         {/* Content */}
         {/* <SheetFooter>
           <SheetClose asChild>
@@ -31,3 +30,18 @@ export function MobileToggle() {
     </Sheet>
   );
 }
+
+const NavMobile = () => {
+  return (
+    <div className="flex flex-col">
+      {/* Header */}
+      <div className="border-b p-4">
+        <NavLogo />
+      </div>
+
+      {/* Main */}
+
+      {/* Footer */}
+    </div>
+  );
+};

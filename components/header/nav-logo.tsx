@@ -11,7 +11,7 @@ const NavLogo = () => {
         alt="Pijarmahir"
         width={80}
         height={49}
-        className="h-10 w-auto md:h-12"
+        className="h-12 w-auto"
       />
     </Link>
   );
