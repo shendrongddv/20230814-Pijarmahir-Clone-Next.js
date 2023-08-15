@@ -25,9 +25,4 @@ export const contentPartners = [
     name: "Skill Academy",
     img: "Skill-Academy.png",
   },
-  {
-    id: 6,
-    name: "MyEduSolve",
-    img: "MyEduSolve.png",
-  },
 ];

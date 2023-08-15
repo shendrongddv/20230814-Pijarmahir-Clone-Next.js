@@ -13,7 +13,7 @@ const HorizontalScroll = () => {
         {items?.map((item) => (
           <div
             key={item.id}
-            className="group flex w-5/12 shrink-0 flex-col items-center max-md:first:pl-4 max-md:last:pr-4 md:w-2/12"
+            className="group flex w-5/12 shrink-0 flex-col items-center max-md:first:pl-4 max-md:last:pr-4 md:w-[18.9%]"
           >
             <div className="flex h-full w-full items-center justify-center rounded-lg border p-2 transition duration-200 group-hover:shadow-md">
               <Image
@@ -31,7 +31,7 @@ const HorizontalScroll = () => {
         ))}
       </div>
       <div className="mt-4">
-        <ScrollBar orientation="horizontal" className="max-md:px-4" />
+        <ScrollBar orientation="horizontal" className="max-md:px-4 md:hidden" />
       </div>
     </ScrollArea>
   );
