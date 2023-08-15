@@ -1,10 +1,14 @@
-// Image
+import Image from "next/image";
+
+// Images
 import imgPijarCamp from "../../public/pijarcamp.jpg";
 import imgPijarCampMobile from "../../public/pijarcamp-sm.jpg";
 import imgPijarPrakerja from "../../public/pijarmahir-x-prakerja.jpg";
 import imgPijarPrakerjaMobile from "../../public/pijarmahir-x-prakerja-sm.jpg";
-import Image from "next/image";
+
+// Components
 import HorizontalScroll from "@/components/horizontal-scroll";
+import HomeCategories from "@/components/home-categories";
 
 export default function HomePage() {
   return (
@@ -13,7 +17,51 @@ export default function HomePage() {
       {/* ./ Banner Sliders */}
 
       {/* Category */}
+      <section id="categories" className="px-4 py-16">
+        <div className="container">
+          <HomeCategories />
+        </div>
+      </section>
       {/* ./ Category */}
+
+      {/* Online & Offline Courses */}
+      <section
+        id="courses"
+        className="bg-[url(/backgrounds/bg-1.svg)] bg-cover bg-center bg-no-repeat px-4 py-16"
+      >
+        <div className="container space-y-16">
+          {/* Online Courses */}
+          <div className="grid grid-cols-2 items-center gap-4 md:gap-6">
+            {/* Col */}
+            <div className="">
+              <div className="flex w-max items-center gap-1 rounded-lg rounded-br-3xl rounded-tr-3xl bg-white py-1 pl-2 pr-4 md:gap-2 md:pl-4 md:pr-8">
+                <span className="h-3 w-3 rounded-full bg-blue-900 md:h-4 md:w-4"></span>
+                <h2 className="h2 font-semibold">Kursus Online Prakerja</h2>
+              </div>
+            </div>
+            {/* Col */}
+            <div className="text-end text-white max-md:px-4">Lihat Semua</div>
+            {/* Col */}
+          </div>
+          {/* ./ Online Courses */}
+
+          {/* Offline Courses */}
+          <div className="grid grid-cols-2 items-center gap-4 md:gap-6">
+            {/* Col */}
+            <div className="">
+              <div className="flex w-max items-center gap-1 rounded-lg rounded-br-3xl rounded-tr-3xl bg-white py-1 pl-2 pr-4 md:gap-2 md:pl-4 md:pr-8">
+                <span className="h-3 w-3 rounded-full bg-blue-900 md:h-4 md:w-4"></span>
+                <h2 className="h2 font-semibold">Kursus Offline Prakerja</h2>
+              </div>
+            </div>
+            {/* Col */}
+            <div className="text-end text-white max-md:px-4">Lihat Semua</div>
+            {/* Col */}
+          </div>
+          {/* ./ Offline Courses */}
+        </div>
+      </section>
+      {/* ./Online & Offline Courses */}
 
       {/* Specials */}
       <section id="specials" className="px-4 pt-16">
