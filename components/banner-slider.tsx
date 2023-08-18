@@ -6,8 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 // Swiper Modules
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
 
 // Components
 import BannerCard from "./banner-card";
@@ -20,7 +21,7 @@ const BannerSlider = () => {
 
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
+      modules={[Navigation, Pagination, Autoplay, EffectFade]}
       loop
       autoplay={{
         delay: 5000,
@@ -28,6 +29,7 @@ const BannerSlider = () => {
         pauseOnMouseEnter: true,
       }}
       centeredSlides={true}
+      effect={"fade"}
       // navigation
       // pagination={{ clickable: true }}
       breakpoints={{
