@@ -9,7 +9,7 @@ import NavSearch from "./nav-search";
 
 const HeaderMain = () => {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full gap-2 border-b bg-white px-4 max-md:py-2 md:gap-4">
+    <header className="sticky left-0 top-0 z-50 w-full gap-2 border-b bg-white px-4 max-md:py-2 md:gap-4">
       <div className="container">
         <div className="flex items-center justify-between gap-2 md:h-20">
           {/* MobileToggle */}

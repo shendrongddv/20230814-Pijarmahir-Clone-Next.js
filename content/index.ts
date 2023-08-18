@@ -1,3 +1,27 @@
+// Banner Sliders
+export const contentBanners = [
+  {
+    id: 1,
+    url: "/",
+    img: "1.jpg",
+  },
+  {
+    id: 2,
+    url: "/",
+    img: "2.jpg",
+  },
+  {
+    id: 3,
+    url: "/",
+    img: "3.jpg",
+  },
+  {
+    id: 4,
+    url: "/",
+    img: "4.jpg",
+  },
+];
+
 // Categories
 export const contentCategories = [
   {

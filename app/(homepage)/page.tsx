@@ -7,17 +7,23 @@ import imgPijarPrakerja from "../../public/pijarmahir-x-prakerja.jpg";
 import imgPijarPrakerjaMobile from "../../public/pijarmahir-x-prakerja-sm.jpg";
 
 // Components
-import HorizontalScroll from "@/components/horizontal-scroll";
+import BannerSlider from "@/components/banner-slider";
 import HomeCategories from "@/components/home-categories";
+import HorizontalScroll from "@/components/horizontal-scroll";
 
 export default function HomePage() {
   return (
     <main className="flex flex-col">
       {/* Banner Sliders */}
+      <section id="banners" className="max-md:pb-4 md:px-4 md:py-16">
+        <div className="container w-full justify-center">
+          <BannerSlider />
+        </div>
+      </section>
       {/* ./ Banner Sliders */}
 
       {/* Category */}
-      <section id="categories" className="px-4 py-16">
+      <section id="categories" className="px-4 pb-16">
         <div className="container">
           <HomeCategories />
         </div>
