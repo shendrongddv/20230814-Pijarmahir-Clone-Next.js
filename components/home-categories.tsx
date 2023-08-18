@@ -6,7 +6,7 @@ const HomeCategories = () => {
   const items = contentCategories;
 
   return (
-    <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-6">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
       {items?.map((item) => (
         <div
           key={item.id}

@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col">
       {/* Banner Sliders */}
-      <section id="banners" className="max-md:pb-4 md:px-4 md:py-16">
+      <section id="banners" className="px-4 py-4 md:py-16">
         <div className="container w-full justify-center">
           <BannerSlider />
         </div>

@@ -7,7 +7,7 @@ interface BannerCardProps {
 
 const BannerCard: React.FC<BannerCardProps> = ({ url, img }) => {
   return (
-    <div className="overflow-hidden md:rounded-lg">
+    <div className="overflow-hidden rounded-lg">
       <Image
         src={`/banners/${img}`}
         alt="Image"
