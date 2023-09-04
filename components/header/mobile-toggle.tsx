@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
@@ -7,11 +10,19 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
+
 import { LucideIcon, Menu } from "lucide-react";
+
+// Images
+import PrakerjaImage from "./../../public/prakerja.svg";
+import PijarCampImage from "./../../public/pijar-camp.svg";
+
+// Components
 import { SiteLogo } from "../site-logo";
+
+// Contents
 import { categoryLinks } from "./nav-dropdown";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function MobileToggle() {
   return (
@@ -57,21 +68,53 @@ const NavMobile = () => {
       <ul className="mb-4 grid grid-cols-2 gap-2">
         <li>
           <SheetClose asChild>
-            <Button variant="outline" className="w-full">
+            <Link
+              href="/"
+              aria-label="Prakerja"
+              className={cn(
+                buttonVariants({
+                  variant: "outline",
+                  size: "default",
+                  className:
+                    "flex h-max flex-col items-center gap-1 text-center",
+                }),
+              )}
+            >
+              <Image
+                src={PrakerjaImage}
+                alt="Prakerja"
+                className="h-6 w-auto"
+              />
               Prakerja
-            </Button>
+            </Link>
           </SheetClose>
         </li>
         <li>
           <SheetClose asChild>
-            <Button variant="outline" className="w-full">
+            <Link
+              href="/"
+              aria-label="Prakerja"
+              className={cn(
+                buttonVariants({
+                  variant: "outline",
+                  size: "default",
+                  className:
+                    "flex h-max flex-col items-center gap-1 text-center",
+                }),
+              )}
+            >
+              <Image
+                src={PijarCampImage}
+                alt="Pijar Camp"
+                className="h-6 w-auto"
+              />
               Pijar Camp
-            </Button>
+            </Link>
           </SheetClose>
         </li>
       </ul>
       <span className="text-sm font-medium">Kategori</span>
-      <ul className="mt-2 grid gap-1">
+      <ul className="mt-1 grid gap-1">
         {categoryLinks?.map((item) => (
           <li key={item.id}>
             <CategoryItem
