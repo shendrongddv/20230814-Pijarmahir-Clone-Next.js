@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 // Content
-const categoryLinks = [
+export const categoryLinks = [
   {
     id: 1,
     label: "Kartu Prakerja",
