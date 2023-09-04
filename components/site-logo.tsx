@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "../../public/pijar-mahir-logo.svg";
+import Logo from "./../public/pijar-mahir-logo.svg";
 
-const NavLogo = () => {
+export const SiteLogo = () => {
   return (
     <Link href="/">
       <Image
@@ -11,10 +11,8 @@ const NavLogo = () => {
         alt="Pijarmahir"
         width={80}
         height={49}
-        className="h-12 w-auto"
+        className="h-8 w-auto md:h-10"
       />
     </Link>
   );
 };
-
-export default NavLogo;

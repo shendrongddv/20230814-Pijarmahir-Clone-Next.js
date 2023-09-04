@@ -1,5 +1,5 @@
+import HeaderMain from "@/components/header/header";
 import FooterMain from "@/components/footer/footer-main";
-import HeaderMain from "@/components/header/header-main";
 
 interface HomeLayoutProps {
   children: React.ReactNode;

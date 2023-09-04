@@ -1,31 +1,43 @@
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
-  // SheetClose,
+  SheetClose,
   SheetContent,
-  // SheetFooter,
+  SheetFooter,
+  SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import NavLogo from "./nav-logo";
+import { SiteLogo } from "../site-logo";
 
 export function MobileToggle() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="shrink-0">
+        <Button variant="default" size="icon">
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-4/5 p-0">
-        {/* Content */}
-        <NavMobile />
-        {/* Content */}
-        {/* <SheetFooter>
+      <SheetContent
+        side="left"
+        className="flex h-full w-4/5 flex-col justify-start p-0"
+      >
+        <SheetHeader className="border-b p-4">
           <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
+            <SiteLogo />
           </SheetClose>
-        </SheetFooter> */}
+        </SheetHeader>
+        {/* Main */}
+        <NavMobile />
+        {/* ./ Main */}
+        <SheetFooter className="mt-auto grid grid-cols-2 gap-2 border-t p-4">
+          <SheetClose asChild>
+            <Button variant="outline">Daftar</Button>
+          </SheetClose>
+          <SheetClose asChild>
+            <Button variant="default">Login</Button>
+          </SheetClose>
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   );
@@ -33,15 +45,84 @@ export function MobileToggle() {
 
 const NavMobile = () => {
   return (
-    <div className="flex flex-col">
-      {/* Header */}
-      <div className="border-b p-4">
-        <NavLogo />
-      </div>
-
-      {/* Main */}
-
-      {/* Footer */}
-    </div>
+    <nav className="px-4">
+      <ul className="mb-4 grid grid-cols-2 gap-2">
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+      </ul>
+      <span className="text-sm font-medium text-muted-foreground">
+        Kategori
+      </span>
+      <ul className="mt-2 grid grid-cols-2 gap-2">
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+        <li>
+          <SheetClose asChild>
+            <Button variant="outline" className="w-full">
+              Daftar
+            </Button>
+          </SheetClose>
+        </li>
+      </ul>
+    </nav>
   );
 };

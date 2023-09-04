@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { NavPopover } from "./nav-popover";
 import { MobileToggle } from "./mobile-toggle";
-import NavLogo from "./nav-logo";
 import { NavMobileButtons } from "./nav-buttons";
 import NavSearch from "./nav-search";
+import { SiteLogo } from "../site-logo";
 
 const HeaderMain = () => {
   return (
@@ -19,7 +19,7 @@ const HeaderMain = () => {
 
           {/* NavLogo */}
           <div className="hidden md:flex">
-            <NavLogo />
+            <SiteLogo />
           </div>
 
           {/* NavPopover */}

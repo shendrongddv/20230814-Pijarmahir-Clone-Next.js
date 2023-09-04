@@ -1,15 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Montserrat as FontDisplay, Inter as FontBody } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
-const fontDisplay = FontDisplay({
+const fontDisplay = Inter({
   subsets: ["latin"],
   variable: "--font-display",
 });
 
-const fontBody = FontBody({
+const fontBody = Inter({
   subsets: ["latin"],
   variable: "--font-body",
 });
@@ -28,11 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(
-          "min-h-screen font-body antialiased",
-          fontDisplay.variable,
-          fontBody.variable,
-        )}
+        className={cn("min-h-screen", fontDisplay.variable, fontBody.variable)}
       >
         {children}
       </body>
