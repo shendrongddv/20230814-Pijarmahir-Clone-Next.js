@@ -35,7 +35,12 @@ export function MobileToggle() {
         {/* ./ Main */}
         <SheetFooter className="mt-auto grid grid-cols-2 gap-2 border-t p-4">
           <SheetClose asChild>
-            <Button variant="outline">Daftar</Button>
+            <Button
+              variant="secondary"
+              className="bg-accent-foreground text-foreground hover:bg-accent-foreground/90 hover:text-foreground"
+            >
+              Daftar
+            </Button>
           </SheetClose>
           <SheetClose asChild>
             <Button variant="default">Login</Button>
@@ -53,22 +58,20 @@ const NavMobile = () => {
         <li>
           <SheetClose asChild>
             <Button variant="outline" className="w-full">
-              Daftar
+              Prakerja
             </Button>
           </SheetClose>
         </li>
         <li>
           <SheetClose asChild>
             <Button variant="outline" className="w-full">
-              Daftar
+              Pijar Camp
             </Button>
           </SheetClose>
         </li>
       </ul>
-      <span className="text-sm font-medium text-muted-foreground">
-        Kategori
-      </span>
-      <ul className="mt-2 grid">
+      <span className="text-sm font-medium">Kategori</span>
+      <ul className="mt-2 grid gap-1">
         {categoryLinks?.map((item) => (
           <li key={item.id}>
             <CategoryItem
@@ -105,7 +108,7 @@ const CategoryItem = ({ label, href, icon: Icon }: TCategoryItem) => {
         )}
       >
         <span className="flex -translate-x-4 items-center justify-start transition-transform duration-300 group-hover:translate-x-0">
-          <Icon className="mr-2 h-4 w-4" />
+          <Icon className="mr-2 h-4 w-4 text-accent-foreground" />
           {label}
         </span>
       </Link>
