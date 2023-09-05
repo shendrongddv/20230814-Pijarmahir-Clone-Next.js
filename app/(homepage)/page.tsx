@@ -74,35 +74,52 @@ export default function HomePage() {
       {/* ./Online & Offline Courses */}
 
       {/* Best Sellers */}
-      <section className="border-b py-16 md:px-4">
-        <div className="container flex flex-col gap-4">
+      <section className="pt-16 md:px-4">
+        <div className="container flex flex-col gap-4 md:gap-6">
           <h2 className="h2 font-semibold max-md:pl-4">Best Sellers</h2>
-
-          {/* # */}
-          <ScrollArea>
-            <div className="flex gap-4">
-              {contentCourses?.map((item) => (
-                <CourseCard
-                  key={item.id}
-                  title={item.title}
-                  provider={item.provider}
-                  reviewCount={item.reviewCount}
-                  price={item.price}
-                  isOnline={item.isOnline}
-                  media={item.media}
-                />
-              ))}
-            </div>
-            <div className="mt-4">
-              <ScrollBar orientation="horizontal" />
-            </div>
-          </ScrollArea>
 
           {/* # */}
           <Sliders />
         </div>
       </section>
       {/* ./ Best Sellers */}
+
+      {/* Populer */}
+      <section className="pt-16 md:px-4">
+        <div className="container flex flex-col gap-4 md:gap-6">
+          <h2 className="h2 font-semibold max-md:pl-4">Populer Saat Ini</h2>
+
+          {/* # */}
+          <Sliders />
+        </div>
+      </section>
+      {/* ./ Populer */}
+
+      {/* Ready */}
+      <section className="pt-16 md:px-4">
+        <div className="container flex flex-col gap-4 md:gap-6">
+          <h2 className="h2 font-semibold max-md:pl-4">
+            Siap Jadi Talenta Digital Terbaik!
+          </h2>
+
+          {/* # */}
+          <Sliders />
+        </div>
+      </section>
+      {/* ./ Ready */}
+
+      {/* Special for You */}
+      <section className="pt-16 md:px-4">
+        <div className="container flex flex-col gap-4 md:gap-6">
+          <h2 className="h2 font-semibold max-md:pl-4">
+            Pilihan Terbaik Untuk Kamu
+          </h2>
+
+          {/* # */}
+          <Sliders />
+        </div>
+      </section>
+      {/* ./ Special for You */}
 
       {/* Specials */}
       <section id="specials" className="px-4 pt-16">

@@ -56,7 +56,7 @@ export const Sliders = () => {
             spaceBetween: 32,
           },
         }}
-        className="mySwiper AAA mt-16 w-full"
+        className="mySwiper AAA w-full overflow-hidden"
       >
         {contentCourses?.map((item) => (
           <SwiperSlide key={item.id} className="BBB">
@@ -71,19 +71,25 @@ export const Sliders = () => {
             />
           </SwiperSlide>
         ))}
-        <SwiperButtonNext>Next</SwiperButtonNext>
+        {/* <SwiperNavigationPrev>Prev</SwiperNavigationPrev>
+        <SwiperNavigationNext>Next</SwiperNavigationNext> */}
       </Swiper>
     </>
   );
 };
 
-type SwiperButtonNextProps = {
+type SwiperNavigationProps = {
   children: React.ReactNode;
 };
 
-const SwiperButtonNext = ({ children }: SwiperButtonNextProps) => {
+const SwiperNavigationNext = ({ children }: SwiperNavigationProps) => {
   const swiper = useSwiper();
   return <button onClick={() => swiper.slideNext()}>{children}</button>;
+};
+
+const SwiperNavigationPrev = ({ children }: SwiperNavigationProps) => {
+  const swiper = useSwiper();
+  return <button onClick={() => swiper.slidePrev()}>{children}</button>;
 };
 
 type CourseCard = {
