@@ -73,9 +73,9 @@ export default function HomePage() {
       {/* ./Online & Offline Courses */}
 
       {/* Best Sellers */}
-      <section className="border-b px-4 py-16">
-        <div className="container flex flex-col gap-8">
-          <h2 className="h2 font-semibold">Best Sellers</h2>
+      <section className="border-b py-16 md:px-4">
+        <div className="container flex flex-col gap-4">
+          <h2 className="h2 font-semibold max-md:pl-4">Best Sellers</h2>
 
           {/* # */}
           <ScrollArea>
