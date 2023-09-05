@@ -139,7 +139,7 @@ h6 {
     margin-right: 16px !important;
   } */
   .swiper-slide.swiper-slide-active {
-    width: 60% !important;
+    /* width: 60% !important; */
     margin: 0 16px 0 16px;
   }
 }
