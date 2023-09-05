@@ -47,11 +47,11 @@ export const CourseCard = ({
       </span>
       <div className="flex items-center">
         <div className="flex items-center">
-          <Star className="h-3.5 w-3.5 pr-0.5 text-yellow-400 last:pr-0" />
-          <Star className="h-3.5 w-3.5 pr-0.5 text-yellow-400 last:pr-0" />
-          <Star className="h-3.5 w-3.5 pr-0.5 text-yellow-400 last:pr-0" />
-          <Star className="h-3.5 w-3.5 pr-0.5 text-yellow-400 last:pr-0" />
-          <Star className="h-3.5 w-3.5 pr-0.5 text-yellow-400 last:pr-0" />
+          <Star className="h-3 w-3 pr-[1px] text-yellow-400 last:pr-0" />
+          <Star className="h-3 w-3 pr-[1px] text-yellow-400 last:pr-0" />
+          <Star className="h-3 w-3 pr-[1px] text-yellow-400 last:pr-0" />
+          <Star className="h-3 w-3 pr-[1px] text-yellow-400 last:pr-0" />
+          <Star className="h-3 w-3 pr-[1px] text-yellow-400 last:pr-0" />
         </div>
         <span className="ml-1 text-[10px] font-bold leading-none">5.0</span>
         <span className="ml-1 text-[10px] leading-none text-muted-foreground">
