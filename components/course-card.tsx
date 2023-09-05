@@ -23,8 +23,8 @@ export const CourseCard = ({
   media,
 }: CourseCard) => {
   return (
-    <div className="w-[40vw] shrink-0 space-y-2 max-md:first:ml-4 max-md:last:mr-4 md:w-[30%]">
-      <div className="overflow-hidden rounded">
+    <div className="w-[40vw] shrink-0 space-y-2 max-md:first:ml-4 max-md:last:mr-4 md:w-1/4">
+      <div className="overflow-hidden rounded-lg">
         <Image
           src={`/courses/${media}`}
           alt={title}

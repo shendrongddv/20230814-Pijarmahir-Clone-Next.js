@@ -110,3 +110,36 @@ h6 {
 .h4 {
   @apply leading-snug;
 }
+
+/* Swiper */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 16px;
+}
+.swiper-pagination-bullet {
+  transition: linear 0.3s;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px !important;
+  border-radius: 999px;
+}
+@media only screen and (max-width: 480px) {
+  /* Styles for screens below 480px */
+  /* .swiper-wrapper {
+    gap: 16px !important;
+  } */
+  .swiper-slide {
+    transition: ease 0.3s;
+    margin: auto 0 auto 0;
+  }
+  /* .swiper-slide:first-child {
+    margin-left: 16px !important;
+  }
+  .swiper-slide:last-child {
+    margin-right: 16px !important;
+  } */
+  .swiper-slide.swiper-slide-active {
+    width: 60% !important;
+    margin: 0 16px 0 16px;
+  }
+}

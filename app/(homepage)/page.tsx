@@ -13,6 +13,7 @@ import HorizontalScroll from "@/components/horizontal-scroll";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { contentCourses } from "@/content";
 import { CourseCard } from "@/components/course-card";
+import { Sliders } from "@/components/sliders";
 
 export default function HomePage() {
   return (
@@ -96,6 +97,9 @@ export default function HomePage() {
               <ScrollBar orientation="horizontal" />
             </div>
           </ScrollArea>
+
+          {/* # */}
+          <Sliders />
         </div>
       </section>
       {/* ./ Best Sellers */}
