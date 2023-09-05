@@ -14,6 +14,11 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { contentCourses } from "@/content";
 import { CourseCard } from "@/components/course-card";
 import { Sliders } from "@/components/sliders";
+import { HomepageOnlineOffline } from "@/components/home-online-offline";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Circle } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -35,50 +40,32 @@ export default function HomePage() {
       {/* ./ Category */}
 
       {/* Online & Offline Courses */}
-      <section
-        id="courses"
-        className="bg-[url(/backgrounds/bg-1.svg)] bg-cover bg-center bg-no-repeat px-4 py-16"
-      >
-        <div className="container space-y-16">
-          {/* Online Courses */}
-          <div className="grid grid-cols-2 items-center gap-4 md:gap-6">
-            {/* Col */}
-            <div className="">
-              <div className="flex w-max items-center gap-1 rounded-lg rounded-br-3xl rounded-tr-3xl bg-white py-1 pl-2 pr-4 md:gap-2 md:pl-4 md:pr-8">
-                <span className="h-3 w-3 rounded-full bg-blue-900 md:h-4 md:w-4"></span>
-                <h2 className="h2 font-semibold">Kursus Online Prakerja</h2>
-              </div>
-            </div>
-            {/* Col */}
-            <div className="text-end text-white max-md:px-4">Lihat Semua</div>
-            {/* Col */}
-          </div>
-          {/* ./ Online Courses */}
-
-          {/* Offline Courses */}
-          <div className="grid grid-cols-2 items-center gap-4 md:gap-6">
-            {/* Col */}
-            <div className="">
-              <div className="flex w-max items-center gap-1 rounded-lg rounded-br-3xl rounded-tr-3xl bg-white py-1 pl-2 pr-4 md:gap-2 md:pl-4 md:pr-8">
-                <span className="h-3 w-3 rounded-full bg-blue-900 md:h-4 md:w-4"></span>
-                <h2 className="h2 font-semibold">Kursus Offline Prakerja</h2>
-              </div>
-            </div>
-            {/* Col */}
-            <div className="text-end text-white max-md:px-4">Lihat Semua</div>
-            {/* Col */}
-          </div>
-          {/* ./ Offline Courses */}
-        </div>
-      </section>
+      <HomepageOnlineOffline />
       {/* ./Online & Offline Courses */}
 
       {/* Best Sellers */}
       <section className="pt-16 md:px-4">
         <div className="container flex flex-col gap-4 md:gap-6">
-          <h2 className="h2 font-semibold max-md:pl-4">Best Sellers</h2>
+          {/* Title */}
+          <div className="flex items-center justify-between max-md:px-4">
+            <h2 className="h2 font-semibold">Best Seller</h2>
 
-          {/* # */}
+            <Link
+              href="/"
+              aria-label="Lihat Semua"
+              className={cn(
+                buttonVariants({
+                  variant: "link",
+                  size: "default",
+                  className: "px-0 py-0 font-semibold text-accent-foreground",
+                }),
+              )}
+            >
+              Lihat Semua
+            </Link>
+          </div>
+
+          {/* Content */}
           <Sliders />
         </div>
       </section>
@@ -87,9 +74,26 @@ export default function HomePage() {
       {/* Populer */}
       <section className="pt-16 md:px-4">
         <div className="container flex flex-col gap-4 md:gap-6">
-          <h2 className="h2 font-semibold max-md:pl-4">Populer Saat Ini</h2>
+          {/* Title */}
+          <div className="flex items-center justify-between max-md:px-4">
+            <h2 className="h2 font-semibold">Populer Saat Ini</h2>
 
-          {/* # */}
+            <Link
+              href="/"
+              aria-label="Lihat Semua"
+              className={cn(
+                buttonVariants({
+                  variant: "link",
+                  size: "default",
+                  className: "px-0 py-0 font-semibold text-accent-foreground",
+                }),
+              )}
+            >
+              Lihat Semua
+            </Link>
+          </div>
+
+          {/* Content */}
           <Sliders />
         </div>
       </section>
@@ -98,11 +102,28 @@ export default function HomePage() {
       {/* Ready */}
       <section className="pt-16 md:px-4">
         <div className="container flex flex-col gap-4 md:gap-6">
-          <h2 className="h2 font-semibold max-md:pl-4">
-            Siap Jadi Talenta Digital Terbaik!
-          </h2>
+          {/* Title */}
+          <div className="flex items-center justify-between max-md:px-4">
+            <h2 className="h2 font-semibold">
+              Siap Jadi Talenta Digital terbaik
+            </h2>
 
-          {/* # */}
+            <Link
+              href="/"
+              aria-label="Lihat Semua"
+              className={cn(
+                buttonVariants({
+                  variant: "link",
+                  size: "default",
+                  className: "px-0 py-0 font-semibold text-accent-foreground",
+                }),
+              )}
+            >
+              Lihat Semua
+            </Link>
+          </div>
+
+          {/* Content */}
           <Sliders />
         </div>
       </section>
@@ -111,11 +132,26 @@ export default function HomePage() {
       {/* Special for You */}
       <section className="pt-16 md:px-4">
         <div className="container flex flex-col gap-4 md:gap-6">
-          <h2 className="h2 font-semibold max-md:pl-4">
-            Pilihan Terbaik Untuk Kamu
-          </h2>
+          {/* Title */}
+          <div className="flex items-center justify-between max-md:px-4">
+            <h2 className="h2 font-semibold">Pilihan Terbaik Untukmu</h2>
 
-          {/* # */}
+            <Link
+              href="/"
+              aria-label="Lihat Semua"
+              className={cn(
+                buttonVariants({
+                  variant: "link",
+                  size: "default",
+                  className: "px-0 py-0 font-semibold text-accent-foreground",
+                }),
+              )}
+            >
+              Lihat Semua
+            </Link>
+          </div>
+
+          {/* Content */}
           <Sliders />
         </div>
       </section>

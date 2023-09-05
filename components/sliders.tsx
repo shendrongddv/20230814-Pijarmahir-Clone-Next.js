@@ -45,7 +45,7 @@ export const Sliders = () => {
           },
           640: {
             slidesPerView: 2,
-            spaceBetween: 24,
+            spaceBetween: 16,
           },
           768: {
             slidesPerView: 3,
@@ -53,7 +53,7 @@ export const Sliders = () => {
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 32,
+            spaceBetween: 24,
           },
         }}
         className="mySwiper AAA w-full overflow-hidden"
@@ -109,8 +109,8 @@ const CourseCard = ({
   media,
 }: CourseCard) => {
   return (
-    <div className="CCC space-y-2">
-      <div className="overflow-hidden rounded-lg">
+    <div className="CCC space-y-2 rounded-xl border border-border bg-white p-2 pb-4">
+      <div className="mb-2 overflow-hidden rounded-lg">
         <Image
           src={`/courses/${media}`}
           alt={title}
