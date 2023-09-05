@@ -182,3 +182,87 @@ export const contentReviews = [
     body: "Prakerja program adalah program yang sangat direkomendasikan bagi masyarakat Indonesia yang ingin meningkatkan keterampilan dan mendapatkan pekerjaan baru.",
   },
 ];
+
+// Courses
+export const contentCourses = [
+  {
+    id: 1,
+    title:
+      "happen sheet include bright easily involved duty especially laid short non.",
+    provider: "Cariilmu",
+    reviewCount: 399,
+    price: 306000,
+    isOnline: true,
+    media: "1.jpg",
+  },
+  {
+    id: 2,
+    title:
+      "grandmother per choose tree people most war push judge scared chose prog.",
+    provider: "JFC Plus",
+    reviewCount: 897,
+    price: 287000,
+    isOnline: true,
+    media: "2.png",
+  },
+  {
+    id: 3,
+    title:
+      "speed cast mind were page pan aloud law consider separate baseball remo.",
+    provider: "Kursus Menjadit 28 Jam",
+    reviewCount: 307,
+    price: 559000,
+    isOnline: true,
+    media: "3.jpg",
+  },
+  {
+    id: 4,
+    title:
+      "useful thousand fighting height sum explanation terrible date standard wheel symbol affect field machine i.",
+    provider: "Kita Kompeten",
+    reviewCount: 387,
+    price: 643000,
+    isOnline: true,
+    media: "4.png",
+  },
+  {
+    id: 5,
+    title:
+      "younger coast ocean chemical structure building hair pleasure accept mirror anythin.",
+    provider: "Karier.mu",
+    reviewCount: 860,
+    price: 702000,
+    isOnline: true,
+    media: "5.jpg",
+  },
+  {
+    id: 6,
+    title:
+      "foot nation reason audience thought introduced search applied generally why tried captured bo.",
+    provider: "Link Productive",
+    reviewCount: 854,
+    price: 631000,
+    isOnline: true,
+    media: "6.png",
+  },
+  {
+    id: 7,
+    title:
+      "earn color second weather whether short settle declared double quick dollar leader.",
+    provider: "NF Computer",
+    reviewCount: 730,
+    price: 780000,
+    isOnline: true,
+    media: "7.jpg",
+  },
+  {
+    id: 8,
+    title:
+      "fix massage trunk globe pour social main evidence company tip swung over unio.",
+    provider: "Namsan Course",
+    reviewCount: 733,
+    price: 947000,
+    isOnline: true,
+    media: "8.png",
+  },
+];

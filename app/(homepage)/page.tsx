@@ -10,6 +10,9 @@ import imgPijarPrakerjaMobile from "../../public/pijarmahir-x-prakerja-sm.jpg";
 import BannerSlider from "@/components/banner-slider";
 import HomeCategories from "@/components/home-categories";
 import HorizontalScroll from "@/components/horizontal-scroll";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { contentCourses } from "@/content";
+import { CourseCard } from "@/components/course-card";
 
 export default function HomePage() {
   return (
@@ -68,6 +71,34 @@ export default function HomePage() {
         </div>
       </section>
       {/* ./Online & Offline Courses */}
+
+      {/* Best Sellers */}
+      <section className="border-b px-4 py-16">
+        <div className="container flex flex-col gap-8">
+          <h2 className="h2 font-semibold">Best Sellers</h2>
+
+          {/* # */}
+          <ScrollArea>
+            <div className="flex gap-4">
+              {contentCourses?.map((item) => (
+                <CourseCard
+                  key={item.id}
+                  title={item.title}
+                  provider={item.provider}
+                  reviewCount={item.reviewCount}
+                  price={item.price}
+                  isOnline={item.isOnline}
+                  media={item.media}
+                />
+              ))}
+            </div>
+            <div className="mt-4">
+              <ScrollBar orientation="horizontal" />
+            </div>
+          </ScrollArea>
+        </div>
+      </section>
+      {/* ./ Best Sellers */}
 
       {/* Specials */}
       <section id="specials" className="px-4 pt-16">
