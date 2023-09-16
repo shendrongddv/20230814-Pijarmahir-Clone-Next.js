@@ -1,23 +1,12 @@
-import "./globals.css";
+import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
+import { siteConfig } from "@/config/site";
+import { fontDisplay, fontBody } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 
-const fontDisplay = Inter({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
-
-const fontBody = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-});
-
 export const metadata: Metadata = {
-  title: "Pijar Mahir",
-  description:
-    "Platform pembelajaran digital tersertifikasi, mitra platfrom resmi untuk Kartu Prakerja",
+  title: siteConfig.name,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
@@ -26,9 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="!scroll-smooth">
       <body
-        className={cn("min-h-screen", fontDisplay.variable, fontBody.variable)}
+        className={cn(
+          "min-h-screen font-body antialiased",
+          fontDisplay.variable,
+          fontBody.variable,
+        )}
       >
         {children}
       </body>

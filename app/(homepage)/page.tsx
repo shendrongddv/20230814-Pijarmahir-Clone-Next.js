@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 // Images
-import imgPijarCamp from "../../public/pijarcamp.jpg";
-import imgPijarCampMobile from "../../public/pijarcamp-sm.jpg";
-import imgPijarPrakerja from "../../public/pijarmahir-x-prakerja.jpg";
-import imgPijarPrakerjaMobile from "../../public/pijarmahir-x-prakerja-sm.jpg";
+import imgPijarCamp from "../../public/pijarcamp.webp";
+import imgPijarCampMobile from "../../public/pijarcamp-sm.webp";
+import imgPijarPrakerja from "../../public/pijarmahir-x-prakerja.webp";
+import imgPijarPrakerjaMobile from "../../public/pijarmahir-x-prakerja-sm.webp";
 
 // Components
 import BannerSlider from "@/components/banner-slider";

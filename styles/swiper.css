@@ -1,0 +1,35 @@
+.mySwiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 24px;
+}
+.mySwiper .swiper-pagination-bullet {
+  transition: linear 0.3s;
+}
+.mySwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px !important;
+  border-radius: 999px;
+}
+@media only screen and (max-width: 480px) {
+  /* Styles for screens below 480px */
+  /* .mySwiper .swiper-wrapper {
+    gap: 16px !important;
+  } */
+  .mySwiper .swiper-slide {
+    transition: ease 0.3s;
+    margin: auto 0 auto 0;
+  }
+  /* .mySwiper .swiper-slide:first-child {
+    margin-left: 16px !important;
+  }
+  .mySwiper .swiper-slide:last-child {
+    margin-right: 16px !important;
+  } */
+  .mySwiper .swiper-slide.swiper-slide-active {
+    /* width: 60% !important; */
+    margin: 0 16px 0 16px;
+  }
+  .mySwiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 100%;
+    margin: 0 16px !important;
+  }
+}
